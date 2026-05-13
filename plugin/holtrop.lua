@@ -8,8 +8,13 @@ vim.cmd([[runtime plugin/fzf-lua.lua]])
 
 -- Show titlestring in GUI window title
 vim.opt.title = true
+vim.opt.titlestring = "%t%m%r%{exists('g:project_name') ? ' : '.g:project_name : ''}"
 
 -- Shortcuts
 vim.cmd([[map <C-s> :FzfLua combine pickers=buffers,git_files<CR>]])
 vim.cmd([[vnoremap < <gv]])
 vim.cmd([[vnoremap > >gv]])
+vim.cmd([[nnoremap <silent> ,t :tabn<CR>]])
+vim.cmd([[nnoremap <silent> ,T :tabp<CR>]])
+vim.cmd([[nnoremap <silent> <C-S-PageUp> :tabmove -1<CR>]])
+vim.cmd([[nnoremap <silent> <C-S-PageDown> :tabmove +1<CR>]])
