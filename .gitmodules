@@ -1,3 +1,6 @@
 [submodule "tokyonight.nvim"]
 	path = tokyonight.nvim
 	url = https://github.com/holtrop/tokyonight.nvim
+[submodule "fzf-lua.nvim"]
+	path = fzf-lua.nvim
+	url = https://github.com/holtrop/fzf-lua
