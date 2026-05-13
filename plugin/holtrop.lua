@@ -8,3 +8,8 @@ vim.cmd([[runtime plugin/fzf-lua.lua]])
 
 -- Show titlestring in GUI window title
 vim.opt.title = true
+
+-- Shortcuts
+vim.cmd([[map <C-s> :FzfLua combine pickers=buffers,git_files<CR>]])
+vim.cmd([[vnoremap < <gv]])
+vim.cmd([[vnoremap > >gv]])
