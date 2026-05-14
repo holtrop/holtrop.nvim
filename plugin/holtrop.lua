@@ -18,3 +18,6 @@ vim.cmd([[nnoremap <silent> ,t :tabn<CR>]])
 vim.cmd([[nnoremap <silent> ,T :tabp<CR>]])
 vim.cmd([[nnoremap <silent> <C-S-PageUp> :tabmove -1<CR>]])
 vim.cmd([[nnoremap <silent> <C-S-PageDown> :tabmove +1<CR>]])
+
+-- Use system clipboard for unnamed register
+vim.opt.clipboard = "unnamedplus"
