@@ -9,10 +9,12 @@ vim.cmd([[runtime plugin/fzf-lua.lua]])
 -- Show titlestring in GUI window title
 vim.opt.title = true
 vim.opt.titlestring = "%t%m%r%{exists('g:project_name') ? ' : '.g:project_name : ''}"
+
 vim.opt.expandtab = true
 vim.opt.sw = 4
 vim.opt.sts = 4
 vim.opt.colorcolumn = "80,120"
+vim.opt.modeline = false
 
 -- Shortcuts
 vim.cmd([[map <C-s> :FzfLua combine pickers=buffers,git_files<CR>]])
