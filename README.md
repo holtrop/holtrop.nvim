@@ -13,3 +13,5 @@ sudo pacman -S neovim neovim-qt fzf xclip
 ```
 vim.opt.rtp:prepend("~/.config/nvim/holtrop.nvim")
 ```
+
+- Configure Plasma application settings for nvim-qt to disable focus stealing prevention
