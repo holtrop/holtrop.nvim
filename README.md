@@ -3,7 +3,7 @@
 - Install packages:
 
 ```
-sudo pacman -S neovim neovim-qt fzf xclip
+sudo pacman -S neovim neovim-qt fzf xclip xxhash
 ```
 
 - `mkdir ~/.config/nvim`
