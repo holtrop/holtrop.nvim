@@ -13,8 +13,10 @@ vim.opt.titlestring = "%t%m%r%{exists('g:project_name') ? ' : '.g:project_name :
 vim.opt.expandtab = true
 vim.opt.sw = 4
 vim.opt.sts = 4
-vim.opt.colorcolumn = "80,120"
 vim.opt.modeline = false
+vim.opt.colorcolumn = "80"
+vim.opt.cursorcolumn = true
+vim.opt.cursorline = true
 
 -- Shortcuts
 vim.cmd([[map <C-s> :FzfLua combine pickers=buffers,git_files<CR>]])
